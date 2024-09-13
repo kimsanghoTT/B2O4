@@ -1,0 +1,101 @@
+.search-results-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-results-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.search-results-section {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+  text-align: center;
+  display: grid;
+}
+
+.search-results-subtitle {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px;
+}
+
+.result-item {
+  width: calc(25% - 20px);
+  max-width: 300px;
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+
+.result-item:hover {
+  transform: translateY(-15px);
+}
+
+.result-image {
+  width: 100%;
+  max-width: 300px;
+  max-height: 180px;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.result-info {
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  max-height: 190px;
+  height: 100%;
+}
+
+.result-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.result-location,
+.result-price,
+.result-kind,
+.result-date,
+.result-capacity,
+.result-author {
+  font-size: 14px;
+  color: rgb(39, 39, 39);
+  margin-bottom: 3px;
+}
+
+.price-color {
+  color: rgb(243, 133, 133);
+}
+
+.no-results {
+  font-size: 16px;
+  color: #888;
+  margin-top: 10px;
+}

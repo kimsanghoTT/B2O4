@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="b2o4.mapper.ChatMapper">
+
+	<!-- 채팅 기록 DB에 넣기 -->
+    <insert id="recordChatMessage" parameterType="b2o4.dto.ChatLog" useGeneratedKeys="true" keyProperty="msgNo">
+        INSERT INTO LiveChatMessage(memberId, msgContent, msgAt) VALUES (#{memberId}, #{msgContent}, #{msgAt})
+    </insert>
+	
+    <!-- 채팅 삭제 -->
+    <delete id="deleteChatMessage" parameterType="b2o4.dto.ChatLog">
+        DELETE FROM LiveChatMessage WHERE msgContent = #{msgContent} AND msgAt = #{msgAt}
+    </delete>
+    
+    <!-- 검색한 사용자의 채팅목록 가져오기 -->
+    <select id="showWhosChat" parameterType="b2o4.dto.ChatLog">
+    	SELECT * from livechatmessage where memberId = #{memberId}
+    </select>
+    
+    <!-- 채팅 금지 / 허용 -->
+    <update id="switchAuthToChat" parameterType="Map">
+    	UPDATE member SET chatable = #{chatable} where memberId = #{memberId}
+    </update>
+    
+	<!-- 관리자인지 여부 확인 -->
+    <select id="isAdmin" parameterType="String" resultType="boolean">
+        SELECT memberType = 'A' FROM member WHERE memberId = #{memberId}
+    </select>
+
+</mapper>

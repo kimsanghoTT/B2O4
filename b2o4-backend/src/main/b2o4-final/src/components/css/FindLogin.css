@@ -1,0 +1,185 @@
+.findIdPw-container{
+    display: flex;
+    flex-direction: column; /* 세로 방향으로 정렬 */
+    align-items: center; /* 수평 가운데 정렬 */
+    justify-content: center; /* 수직 가운데 정렬 */
+}
+
+.find-Id-Pw{
+    width: 100%;
+    background-color: rgb(124, 182, 38);
+    padding: 20px;
+    text-align: center;
+}
+
+.Link-list{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    margin: 0px 100px;
+}
+
+.Link-list:hover{
+    background-color: #77dd77;
+    padding: 21px;
+    color: #212121;
+}
+
+
+.findId-container{
+    width: 30%;
+    padding: 20px
+}
+
+.findId-title{
+    border-bottom: 2px solid gray;
+    margin-top: 50px;
+}
+.findId-title h1{
+    color: #212121;
+    font-size: 28px;
+}
+
+.findId{
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-top: 50px;
+    height: auto;
+}
+
+.findId input{
+   display: flex;
+   flex-direction: column; /* 세로 방향으로 정렬 */
+    border-radius: 10px;
+    margin: 30px auto;
+    width: 92%;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.findId-button{
+    text-align: center;
+}
+
+.findId-button button{
+    margin-top: 20px;
+    width: 92%;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #77dd77;
+    color: #212121;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.error-message{
+    color: red;
+}
+
+.error-message p{
+    font-size: 16px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.findResult{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+/*********************** password 찾기 ***********************/
+.findPw-container{
+   width: 30%;
+   padding: 20px
+}
+
+.findPw-title{
+    border-bottom: 2px solid gray;
+    margin-top: 50px;
+}
+
+.findPw-title h1{
+    color: #212121;
+    font-size: 28px;
+}
+
+
+.findPw{
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-top: 50px;
+    height: auto;
+}
+
+.findPw input{
+    display: flex;
+   flex-direction: column; /* 세로 방향으로 정렬 */
+    border-radius: 10px;
+    margin: 30px auto;
+    width: 92%;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+.findPw-button{
+    text-align: center;
+}
+
+.findPw-button button{
+    margin-top: 20px;
+    width: 92%;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #77dd77;
+    color: #212121;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.error-message{
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.email-auth{
+    margin: 20px;
+    text-align: center;
+}
+
+.email-Auth{
+    margin-top: 20px;
+}
+
+.email-Auth p{
+    font-size: 20px;
+    color: green;
+}
+
+.email-Auth button{
+    margin-top: 10px;
+    width: 90%;
+    font-size: 20px;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+.email-Auth-content h4{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.btn{
+    margin-top: -20px;
+    padding: 8px 16px;
+}

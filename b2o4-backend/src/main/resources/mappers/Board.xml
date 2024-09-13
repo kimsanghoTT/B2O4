@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        
+<mapper namespace="b2o4.mapper.BoardMapper">
+	<select id="boardMainSelect">
+		SELECT b.boardNo, b.memberNo, b.boardTitle, b.boardContent, b.boardCreateDate, m.memberName
+		FROM board b
+		JOIN member m ON b.memberNo = m.memberNo
+	</select>
+	
+	<insert id="insertBoardPost" parameterType="Board">
+		INSERT INTO board (memberNo, boardTitle, boardContent)
+		VALUES (#{memberNo}, #{boardTitle}, #{boardContent})
+	</insert>
+	
+	<select id="getBoardById" parameterType="int" resultType="Board">
+		SELECT * FROM board
+		WHERE boardNo = #{boardNo}
+	</select>
+	
+	<select id="beforeUpdateBoard" parameterType="int" resultType="Board">
+		SELECT * FROM board
+		WHERE boardNo = #{boardNo}
+	</select>
+	
+	<update id="updateBoard" parameterType="Board">
+		UPDATE board
+		SET boardTitle = #{boardTitle}, boardContent = #{boardContent}
+		WHERE boardNo = #{boardNo}
+	</update> 
+	
+	<delete id="deletePost">
+		DELETE FROM board WHERE boardNo = #{boardNo}
+	</delete>
+</mapper>

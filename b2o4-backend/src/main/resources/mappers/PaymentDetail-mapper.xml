@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="b2o4.mapper.PaymentMapper">
+	
+	<!-- 예약 정보 보기 -->
+	<select id="findPaymentDetailsByMemberNo">
+		SELECT
+		r.reservationNo, r.reservationTotal,
+		r.reservationDate, r.matchDate,
+		r.matchTime, r.reserveCount,
+		s.stadiumNo, s.stadiumName, s.stadiumLocation, s.stadiumAddress,
+		s.stadiumCapacity, s.stadiumPrice, s.stadiumImage
+		FROM
+		reservation r
+		JOIN
+		stadium s ON r.stadiumNo = s.stadiumNo
+		WHERE
+		r.memberNo =
+		#{memberNo}
+		ORDER BY r.reservationDate desc
+	</select>
+
+	<!-- 구매 내역 보기 -->
+	<select id="getDeliveryInfoByMemberNo">
+		SELECT
+		di.deliveryNo,
+		di.deliveryAddress,
+		di.recipientName,
+		di.recipientPhone,
+		di.deliveryRequest,
+		di.createdDate,
+		m.memberNo,
+		m.memberName,
+		m.memberAddress,
+		m.memberPhone,
+		sb.basketNo,
+		gs.goodsImage
+		FROM
+		deliveryInfo di
+		JOIN
+		shoppingBasket sb ON di.basketNo = sb.basketNo
+		JOIN
+		member m ON di.memberNo = m.memberNo
+		JOIN
+		goodsShop gs ON sb.goodsNo = gs.goodsNo
+		WHERE
+		di.memberNo = #{memberNo}
+		ORDER BY di.createdDate desc
+	</select>
+</mapper>

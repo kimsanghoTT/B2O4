@@ -1,0 +1,138 @@
+/*
+.basket-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.basket-container h2 {
+    text-align: center;
+}
+
+.basket-container .eachGoods {
+    display: flex;
+    
+    text-align: center;
+    padding: 30px;
+}
+
+.basket-container .eachGoods img {
+    width: 500px;
+    height: 500px;
+    flex-wrap: wrap;
+}
+
+*/
+.basket-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 190px;
+    font-family: Arial, sans-serif;
+}
+
+.basket-container h2 {
+    text-align: center;
+}
+
+/*총액*/
+.basket-container .basket-table .totalPrise {
+    text-align: center;
+    font-size: 25px;
+    text-decoration: black;
+}
+
+
+/*결제버튼*/
+.basket-container .basket-table .payment-button {
+    width: 40%;
+    margin: 10px 30% 10px 30%;
+    border-radius: 8px;
+    border-style: none;
+    background-color: rgb(26, 102, 208);
+    color: white;
+    padding: 10px;
+}
+
+
+.basket-table {
+    width: 100%;
+    border-collapse: collapse; /* 테이블 셀 간의 경계 제거 */
+    margin: 0 auto;
+}
+
+.basket-table th, .basket-table td {
+    border: 1px solid #ddd; /* 셀의 경계선 */
+    padding: 10px; /* 셀의 안쪽 여백 */
+    text-align: center;
+}
+
+.basket-table th {
+    background-color: #f4f4f4; /* 헤더 배경 색상 */
+}
+
+.basket-table img {
+    width: 200px; /* 이미지 너비 설정 */
+    height: 200px; /* 비율 유지 */
+}
+
+table thead .back-button {
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+    border-style: none;
+    text-align: right;
+
+}
+
+.delete-button {
+    background-color: #ff6f61;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #e65b50;
+}
+
+.back-button {
+    background-color: rgb(53, 181, 89);
+    color: white;
+}
+
+.back-button:hover {
+    background-color: rgb(24, 148, 59);
+}
+
+.basket-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* 짝수 행 배경 색상 */
+}
+
+
+.delete-button  {
+    width: 130px;
+    height: 50px;
+    background-color: #ff6f61;
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    margin: 10px;
+}
+
+ .back-button {
+    width: 130px;
+    height: 50px;
+    background-color: rgb(53, 181, 89);
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    margin: 10px;
+}
+
+.delete-button:hover {
+    background-color: #e65b50;
+}
+
+.back-button:hover {
+    background-color: rgb(24, 148, 59);
+}

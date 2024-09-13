@@ -1,0 +1,84 @@
+/* 지도 컨테이너 스타일 */
+.map-container {
+  position: relative;
+  width: 70%; /* 가로 크기를 70%로 설정 */
+  height: 90vh; /* 세로 크기를 90vh로 설정 */
+  margin: auto; /* 수평 중앙 정렬 */
+  margin-top: 200px;
+  margin-bottom: 200px;
+  top: calc(50vh - 45vh - 50px); /* 헤더와 푸터의 높이를 고려하여 중앙 정렬 */
+  border-radius: 10px; /* 모서리를 둥글게 */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* 그림자 추가 */
+}
+/* 지도 자체 스타일 */
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+/* 지도 내 컨트롤 패널 스타일 */
+.map-control {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+/* 검색 바 스타일 */
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+.search-bar input {
+  width: 200px; /* 너비 조정 */
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px 0 0 3px;
+  outline: none;
+  font-size: 14px;
+}
+.search-bar button {
+  padding: 5px 15px;
+  border-radius: 0 3px 3px 0;
+  border: 1px solid #4CAF50;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+.search-bar button:hover {
+  background-color: #45A049;
+}
+.map-control {
+  position: absolute;
+  z-index: 1000; /* 지도의 다른 요소보다 위에 표시되도록 설정 */
+}
+#locate-button {
+  background-color: #4CAF50; /* 녹색 배경색 */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px; /* 둥근 모서리 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+  transition: background-color 0.3s, transform 0.3s; /* 배경색 및 크기 변화에 대한 부드러운 전환 효과 */
+}
+#locate-button:hover {
+  background-color: #45A049; /* 호버 시 조금 더 진한 녹색 */
+  transform: scale(1.05); /* 호버 시 버튼이 약간 커지도록 */
+}
+#locate-button:active {
+  background-color: #3E8E41; /* 클릭 시 더욱 진한 녹색 */
+  transform: scale(0.95); /* 클릭 시 버튼이 약간 작아지도록 */
+}

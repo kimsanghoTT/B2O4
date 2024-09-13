@@ -1,0 +1,124 @@
+.stadium-reservation-container {
+    background-color: rgb(76, 148, 33);
+    margin: 5% 9% 9% 9%;
+    padding-bottom: 4%;
+    border-radius: 6px;
+    margin-top: 180px;
+}
+
+.go-stadiumList-button-res {
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-top: 25px;
+    margin-left: 10%;
+    transition: background-color 0.3s;
+}
+
+.go-stadiumList-button-res:hover {
+    background-color: rgb(182, 182, 182);
+}
+
+.stadium-reservation-div {
+    background-image: url("../../../public/images/urbanbrush-20200212125558962337-548x583.jpg");
+    border-radius: 6px;
+    background-size: 100% 100%;
+    margin: 20px 40px;
+    padding: 50px 20px;
+}
+
+input[type='date']::before {
+    content: attr(data-placeholder);
+    width: 100%;
+  }
+
+.reservationDate{
+    text-align: center;
+    height: 50px;
+    margin-left: 20%;
+    width: 60%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    background-color: rgb(235, 240, 245);
+    border-style: none;
+}
+
+.reservationTime-select {    
+    border-style: none;
+    text-align: center;
+    height: 50px;
+    background-color: rgb(235, 240, 245);
+    margin-left: 20%;
+    width: 60%;
+    margin-bottom: 10%;
+    border-radius: 10px;
+}
+
+.reservationPersonCount {
+    border-style: none;
+    text-align: center;
+    height: 50px;
+    background-color: rgb(235, 240, 245);
+    margin-left: 20%;
+    width: 60%;
+    margin-bottom: 10%;
+    border-radius: 10px;
+}
+
+.reservation-stadium-name {
+    color: white;
+    font-weight: bold;
+    background-color: #135d06bd;
+    text-align: center;
+    width: 2000px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.reservation-stadium-total-price {
+    background-color: #135d06bd;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    width: 2000px;
+    border-radius: 10px;
+}
+
+.reservation-stadium-name :active {
+    background-color: black;
+}
+
+.reservation-button {
+    margin-top: 3%;
+    margin-left: 90%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.reservation-button:hover {
+    background-color: rgb(182, 182, 182);
+}
+
+.flatpickr-calendar {
+    background: #fff;
+    border: 2px solid #ff69b4;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); 
+  }
+  
+  .flatpickr-month {
+    background-color: #ff69b4; 
+    color: #fff;
+  }
+  
+  .flatpickr-day.selected {
+    background-color: #ff69b4;
+    color: #fff;
+  }
+

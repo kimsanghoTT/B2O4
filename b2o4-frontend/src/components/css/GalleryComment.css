@@ -1,0 +1,155 @@
+/************** comment *****************/
+.comment-container{
+  border: 1px solid #ddd; /* 연한 회색 테두리 */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* 더 강한 그림자 효과 */
+  margin-top: 50px;
+}
+
+.comment-title{
+  padding: 1px;
+  background-color: #77dd77;
+  color: #212121;
+}
+
+.comment-title p {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.comment-write{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+}
+
+
+.name-file{
+  display: flex;
+}
+
+.name-file{
+  width: 100%;
+
+}
+
+.name-file input{
+  display: none;
+}
+
+.name-file img{
+ width: 40px;
+ margin-left: 15px;
+}
+
+.content-submit{
+  display: flex;
+  align-items: center;
+}
+
+
+.comment-write p{
+  font-weight: bold;
+  margin: 10px 0 0 10px;
+  font-size: 14px;
+}
+
+.content-submit button {
+  margin-left: 10px; /* input과 button 사이에 간격 추가 */
+}
+
+.content-submit input{
+  flex: 1;
+  margin: 10px -10px 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px 0 0 10px;
+  font-size: 14px;
+  width: 90%;
+  padding: 5px;
+}
+
+.content-submit button{
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 0 10px 10px 0;
+  font-weight: bold;    
+  font-size: 12px;
+  width: 50px;
+  padding: 6.5px;
+}
+
+
+.comment-item{
+  border-bottom: 1px solid #ccc;
+  margin: 15px;
+  padding: 10px;
+}
+
+.comment-item img{
+  width: 100px;
+}
+
+.comment-content{
+  display: flex;
+  flex-direction: column;
+}
+.comment-content p{
+  margin-top: 10px;
+}
+
+.name-date{
+  display: flex;
+}
+
+.comment-date{
+  display: flex;
+  color: gray;
+  margin-left: 10px;
+}
+
+.comment-reply button{
+  border: none;
+  background-color: white;
+  color: gray;
+}
+
+
+.content-submit{
+  display: flex;
+  align-items: center;
+}
+
+.reply-write{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.reply-write p{
+  font-weight: bold;
+  margin: 10px 0 0 10px;
+  font-size: 14px;
+}
+
+.reply-write input{
+  flex: 1;
+  margin: 10px -10px 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px 0 0 10px;
+  font-size: 14px;
+  width: 90%;
+  padding: 5px;
+}
+
+.reply-write button{
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 0 10px 10px 0;
+  font-weight: bold;    
+  font-size: 12px;
+  width: 50px;
+  padding: 6.5px;
+}

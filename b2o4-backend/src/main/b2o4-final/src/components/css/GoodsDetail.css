@@ -1,0 +1,96 @@
+.detail-container {
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+
+    margin-top: 180px;
+}
+
+.detail-container .payment-button button{
+    width: 100%;
+}
+
+.detail-container img {
+    margin: 15px 35% 0 35%;
+    width: 30%;
+    height: 30%;
+    align-items: center;
+}
+
+.detail-container h2 {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.detail-container p {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: #f9f9f991;
+}
+
+.detail-container .detail-text p {
+    text-align: center;
+    max-width: 70%;
+    margin: 10px 15% 10px 15%;
+    font-size: 20px;
+}
+
+
+/* 사이즈선택 라벨 */
+
+.detail-container .detail-sizeSelect  {
+    margin: 10px 40% 10px 40%;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    border-style: none;
+    text-align: center;
+}
+
+.detail-container .detail-sizeSelect label {
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.detail-container .detail-sizeSelect select {
+    margin: 10px;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+/*버튼*/
+.buttons {
+    text-align: center;
+}
+
+.buttons .basketAdd-button  {
+    width: 130px;
+    height: 50px;
+    background-color: #ff6f61;
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    margin: 10px;
+}
+
+.buttons .back-button {
+    width: 130px;
+    height: 50px;
+    background-color: rgb(53, 181, 89);
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    margin: 10px;
+}
+
+.buttons .basketAdd-button:hover {
+    background-color: #e65b50;
+}
+
+.buttons .back-button:hover {
+    background-color: rgb(24, 148, 59);
+}

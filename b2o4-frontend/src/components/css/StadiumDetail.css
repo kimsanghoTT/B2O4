@@ -1,0 +1,72 @@
+.go-stadiumList-button{
+    color: white;
+    background-color: darkgreen;
+    border-radius: 8px;
+    border-style: none;
+    padding: 5px 10px;
+    margin-top: 25px;
+    margin-left: 10%;
+    transition: background-color 0.3s;
+}
+
+.go-reservation-button-div {
+    justify-content: right;
+}
+
+.go-reservation-button {
+    color: white;
+    background-color: darkgreen;
+    border-radius: 8px;
+    border-style: none;
+    padding: 5px 10px;
+    margin-top: 20px;
+    margin-right: 13%;
+    margin-bottom: 30px;
+    margin-left: 80%;
+    transition: background-color 0.3s;
+}
+
+.go-stadiumList-button:hover, .go-reservation-button:hover {
+    background-color: rgb(9, 157, 9);
+}
+
+.stadium-reservation-img-table{
+    border: 3px solid #ccc;
+    padding: 0px;
+    margin-left: 10%;
+    margin-top: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-right: 10%;
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.stadium-reservation-img-table img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.stadium-detail-text {
+    border-radius: 5px;
+    border: 3px solid #ccc;
+    margin-top: 60px;
+    height: auto;
+    padding: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.stadium-detail-container {
+    display: flex;
+    width: 100%;
+    margin-top: 140px;
+}
+
+.stadium-detail-name {
+    text-align: center;
+}

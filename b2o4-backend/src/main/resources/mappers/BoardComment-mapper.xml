@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        
+<mapper namespace="b2o4.mapper.BoardCommentMapper">
+	<select id="getBoardCommentByBoardNo">
+		SELECT b.boardNo, c.commentNo, c.memberNo, c.boardNo, c.commentContent, c.commentCreateDate 
+		FROM boardComment c
+		JOIN board b ON b.boardNo = c. boardNo
+	</select>
+	
+	<insert id="adminBoardComment">
+		INSERT INTO boardComment (memberNo, boardNo, commentContent)
+		VALUES (#{memberNo}, #{boardNo}, #{commentContent}) 
+	</insert>
+	
+	<select id="getBoardCommentByBoardNo1">
+		SELECT * 
+		FROM boardComment b
+		JOIN member m ON m.memberNo = b.memberNo
+		WHERE boardNo = #{boardNo}
+	</select>
+	
+	<delete id="deleteBoardCommentByCommentNo">
+		DELETE FROM boardComment WHERE commentNo = #{commentNo}
+	</delete>
+</mapper>

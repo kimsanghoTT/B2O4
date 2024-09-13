@@ -1,0 +1,282 @@
+
+.galleryBoard-container {
+  width: 75%;
+  padding: 20px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 200px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-item {
+  flex: 1 1 calc(25% - 20px);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  max-width: calc(25% - 20px);
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.gallery-item-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item-img:hover {
+  transform: scale(1.05); 
+}
+
+.gallery-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.gallery-title {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.gallery-text {
+  color: gray;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.gallery-link {
+  text-decoration: none;
+  color: black;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.pagination {
+  justify-content: center;
+}
+
+a.page-link {
+  color: #333;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a.page-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.page-item.active a {
+  background-color: #28a745;
+  color: white;
+  border: 1px solid #28a745;
+}
+
+.page-item.active {
+  background-color: #28a745;
+  border: 1px solid #28a745;
+  color: white;
+}
+
+.write-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.write-button button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.write-button button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5);
+}
+
+.gallery-detail-container {
+  width: 50%;
+  padding: 20px;
+  margin: 0 auto;
+  position: relative; /* 버튼 위치 기준을 위한 상대 위치 설정 */
+}
+
+.gallery-detail-container button {
+  margin: 5px;
+  
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px; /* 버튼과 콘텐츠 사이에 여백을 추가 */
+}
+
+.detail-content {
+  border: 1px solid #ddd; /* 연한 회색 테두리 */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* 더 강한 그림자 효과 */
+}
+
+.detail-text p{
+  margin: 0 0 10px 20px;
+}
+
+.category{
+  margin: 20px 0 0 20px;
+  color: rgb(50, 112, 255);
+  font-weight: bold;
+  
+}
+
+.detail-content h1 {
+  font-weight: bold;
+  margin: 10px 0 0 20px;
+}
+
+.detail-content h5 {
+  width: 95%;
+  margin: 10px 0 0 20px;
+  color: gray;
+  font-size: 16px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.detail-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 콘텐츠를 가로 방향으로 중앙 정렬 */
+  margin-top: 10px;
+}
+
+.detail-content img{
+  width: 95%;
+  max-height: 500px;
+  height: auto;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.upload-container{
+  width: 50%;
+  padding: 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* 전체 컨테이너를 수직 방향으로 정렬 */
+}
+
+.upload h1{
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.upload-input{
+  margin-top: 20px;
+}
+
+.upload-input button{
+  margin-top: 10px;
+}
+
+
+.input-title{
+  border: 1px solid gray;
+  padding: 15px 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.input-title input {
+  background-color: rgb(240, 236, 236);
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  width: 100%;
+}
+
+.upload-content{
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+
+.input-file{
+  width: 100%;
+  background-color:rgb(240, 236, 236);
+  border: 1px solid gray;
+}
+
+.input-file input{
+  display: none;
+}
+
+.input-file img{
+ width: 50px;
+ margin-left: 5px;
+}
+
+.input-text{
+  width: 100%;
+  min-height: 500px;
+  height: auto;
+  border: 1px solid gray;
+  display: flex; /* Flexbox 레이아웃 사용 */
+  flex-wrap: wrap; /* 이미지가 부모 컨테이너를 넘어가면 자동으로 줄 바꿈 */
+}
+
+.input-text input{
+  width: 100%;
+  border: none;
+  padding: 15px;
+}
+
+.input-text img{
+  margin: 5px 0 0 5px;
+  margin-bottom: 15px;
+  width: 150px;
+  height: auto;
+  max-height: 150px;
+  border-radius: 5%;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        
+<mapper namespace="b2o4.mapper.StadiumMapper">
+	<select id="stadiumMainList">
+		SELECT *
+		FROM stadium
+	</select>
+	
+	<select id="getStadiumById" parameterType="int" resultType="Stadium">
+		SELECT * FROM stadium
+		WHERE stadiumNo = #{stadiumNo}
+	</select>
+	
+	<select id="reservationStadiumByNo" parameterType="int" resultType="Stadium">
+		SELECT * FROM stadium
+		WHERE stadiumNo = #{stadiumNo}
+	</select>
+
+</mapper>

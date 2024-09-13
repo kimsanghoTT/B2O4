@@ -1,0 +1,97 @@
+.sidebar-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  z-index: 1000;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar-container.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar-buttons {
+  display: flex;
+  gap: 15px;
+  pointer-events: auto;
+}
+
+.sidebar-button {
+  border: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  background-color: #4a4a4a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  pointer-events: auto;
+}
+
+.sidebar-button i {
+  font-size: 18px;
+}
+
+.sidebar-button:hover {
+  background-color: #2e2e2e;
+  transform: translateY(-3px);
+}
+
+.scroll-to-top {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  pointer-events: auto;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+}
+
+.scroll-to-top:hover {
+  background-color: #e64a19;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .sidebar-container {
+    right: 10px;
+  }
+
+  .sidebar-buttons {
+    flex-direction: column;
+  }
+
+  .scroll-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .sidebar-button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}

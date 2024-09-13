@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="b2o4.mapper.UsedItemMapper">
+	
+	<!-- 전체목록보기 -->
+	<select id="AllUsedItem" resultType="b2o4.dto.UsedItem">
+		select * from usedItem
+		order by usedItemNo desc
+	</select>
+	
+	<!-- 상품상세보기 -->
+	<select id="UsedItemDetail" resultType="b2o4.dto.UsedItem">
+		SELECT * FROM usedItem
+		WHERE usedItemNo = #{usedItemNo}
+	</select>
+	
+	<!-- 상품등록 -->
+	<insert id="UsedItemUpload" parameterType="b2o4.dto.UsedItem"
+		useGeneratedKeys="true" keyProperty="usedItemNo">
+		insert into usedItem (memberNo, usedItemTitle, usedItemDescription, usedItemImages, memberName, memberPhone)
+		VALUES (#{memberNo}, #{usedItemTitle}, #{usedItemDescription}, #{usedItemImages}, #{memberName}, #{memberPhone})
+	</insert>
+	
+	<!-- 수정하기 -->
+	<update id="UpdateUsedItem" parameterType="UsedItem">
+    	UPDATE usedItem
+    	SET 
+        usedItemTitle = #{usedItemTitle},
+        usedItemDescription = #{usedItemDescription},
+        usedItemImages = #{usedItemImages}
+    	WHERE
+        usedItemNo = #{usedItemNo}
+	</update>
+
+	
+	<!-- 삭제하기 -->
+	<delete id="DeleteUsedItem" parameterType="int">
+    	DELETE FROM usedItem
+    	WHERE usedItemNo = #{usedItemNo}
+	</delete>
+	
+</mapper>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="b2o4.mapper.SearchMapper">
+
+	<!-- Stadium 검색 -->
+	<select id="searchStadiums">
+		SELECT *
+		FROM stadium
+		WHERE stadiumName LIKE CONCAT('%', #{keyword}, '%')
+		OR stadiumLocation LIKE CONCAT('%', #{keyword}, '%')
+		OR stadiumPrice LIKE CONCAT('%', #{keyword}, '%')
+	</select>
+
+    <!-- Goods 검색 -->
+	<select id="searchGoods">
+		SELECT *
+		FROM goodsshop
+		WHERE goodsName LIKE CONCAT('%', #{keyword}, '%')
+		OR goodsKind LIKE CONCAT('%', #{keyword}, '%')
+		OR goodsPrice LIKE CONCAT('%', #{keyword}, '%')
+	</select>
+
+    <!-- GalleryBoard 검색 -->
+	<select id="searchPosts">
+		SELECT *
+		FROM galleryBoard
+		WHERE GBPostTitle LIKE CONCAT('%', #{keyword}, '%')
+		OR memberName LIKE CONCAT('%', #{keyword}, '%')
+		OR GBPostCreateDate LIKE CONCAT('%', #{keyword}, '%')
+	</select>
+</mapper>

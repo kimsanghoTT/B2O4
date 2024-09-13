@@ -1,0 +1,74 @@
+.board-update-table {
+    margin-top: 25px;
+}
+
+.update-success-button {
+    float: right;
+    margin-right: 10%;
+}
+
+.delete-post{
+    float: right;
+    margin-left: 10%;
+    padding: 5px 10px;
+    margin-bottom: 45px;
+    color: white;
+    background-color: darkgreen;
+    border-radius: 8px;
+    border-style: none;
+    margin-right: 2%;
+    transition: background-color 0.3s;
+}
+
+.back-content-button {
+    float: left;
+    margin-left: 10%;
+}
+
+.update-success-button, .back-content-button {
+    color: white;
+    background-color: darkgreen;
+    border-radius: 8px;
+    border-style: none;
+    margin-right: 10%;
+    padding: 5px 10px;
+    margin-bottom: 45px;
+    transition: background-color 0.3s;
+}
+
+.delete-post:hover {
+    background-color: rgb(213, 0, 0);
+}
+
+.update-success-button:hover,.back-content-button:hover {
+    background-color: rgb(9, 157, 9);
+}
+
+.update-form {
+    padding-top: 16px;
+}
+
+.board-update-title {
+    background-color: #D9D9D9;
+    float: left;
+    width: 100%;
+    padding: 6px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+.board-update-content {
+    resize: none;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;
+    padding: 7px;
+}
+
+.update-form {
+    width: 80%;
+    margin: 0 10%;
+    margin-bottom: 100px;
+}

@@ -1,0 +1,311 @@
+.livePage-container{
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f;
+}
+
+.livePage-wrapper{
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  display: flex;
+}
+
+.chat-search-container {
+  color: white;
+  padding: 20px; 
+  background-color: #1f1f1f; 
+  width: 80%;
+  margin: 0 auto; 
+  min-height: 150px; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.chat-search-container h2 {
+  font-size: 24px; 
+  margin-bottom: 15px; 
+}
+
+.search-memberinfo{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.chat-search-bar {
+  width: 100%; 
+  padding: 10px;
+  background-color: #2c2c2c; 
+  border: none; 
+  border-bottom: 2px solid #4caf50; 
+  color: white; 
+  font-size: 16px; 
+  border-radius: 4px; 
+  margin-bottom: 20px; 
+}
+
+.chat-search-bar:focus {
+  outline: none; 
+  border-bottom: 2px solid #81c784;
+  box-shadow: 0 0 0 2px rgba(129, 199, 132, 0.3); 
+}
+
+.chat-search-result-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.chat-search-result-table thead {
+  background-color: #333; 
+  color: white; 
+}
+
+.chat-search-result-table th, .chat-search-result-table td {
+  padding: 12px; 
+  border-bottom: 1px solid #444;
+  text-overflow: ellipsis; /* 텍스트가 넘칠 경우 '...'으로 표시 */
+}
+
+.chat-search-result-table .col-msgContent {
+  text-align: left; 
+  width: 75%; 
+}
+
+.chat-search-result-table .col-memberId,
+.chat-search-result-table .col-msgAt {
+  text-align: left; 
+  width: 12.5%; 
+}
+
+.chat-search-result-table tr:hover {
+  background-color: #2c2c2c; 
+}
+
+.webcam-container {
+  margin: 10px;
+  padding: 20px;
+  flex: 2;
+  position: relative; 
+  width: 100%;
+  height: 90vh;
+}
+
+.webcam{
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  position: relative; 
+  z-index: 1; 
+  border-radius: 10px;
+}
+
+.blackScreen {
+  position: relative; 
+  width: 100%;
+  height: 100%;
+  background-color: black; 
+  color: white; 
+  z-index: 2; /* 이걸 쓰면 숫자가 높은 요소 순서대로 위에 보임 */
+  font-size: 25px;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  border-radius: 10px;
+}
+
+.streaming-start-btn {
+  position: absolute; 
+  bottom: -30px;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; 
+  max-height: 920px;
+  width: 400px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  background-color: #333;
+}
+
+.messages {
+  flex: 1;
+  flex-direction: column-reverse;
+  display: flex;
+  overflow: auto;
+  padding: 10px 0;
+  justify-content: flex-start;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 8px;
+  position: relative; 
+}
+
+.msg-content{
+  color:white
+}
+
+.time-text{
+  color: #b1b1b1;
+  font-size: small;
+}
+
+.deleteBtn {
+  display: none;
+  border: none;
+  cursor: pointer;
+  position: absolute; 
+  right: 8px; 
+  background-color: rgb(37, 37, 37);
+  color: white;
+}
+
+.message:hover .deleteBtn {
+  display: block;
+}
+
+.message:hover {
+  background-color: rgb(37, 37, 37); 
+}
+
+.message-content {
+  display: flex; 
+  flex-direction: column; 
+}
+
+.msg-body {
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 5px;
+}
+
+.msg-sender {
+  font-size: 1rem;
+  margin-right: 5px; 
+}
+
+.admin-crown {
+  width: 18px; 
+  margin-left: 5px;
+  margin-bottom: 3px;
+}
+
+.msg-content {
+  color: white; 
+}
+
+.profile-image{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 100%;
+  transform: translateY(50%);
+}
+
+.timestamp {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.chat-box {
+  display: flex;
+  align-items: center; 
+  padding: 5px;
+  border-top: 1px solid #ccc; 
+}
+
+.input-container {
+  position: relative; /* 이모지 아이콘을 입력창 안에 넣기 */
+  flex: 1;
+}
+
+.message-input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px; 
+  box-sizing: border-box;
+  background-color: #777777;
+}
+
+.message-input:focus{
+  border-color: blue;
+}
+
+.freezing{
+  margin-top: 3px;
+}
+
+.emoji-icon {
+  position: absolute;
+  right: 10px; 
+  top: 50%; 
+  transform: translateY(-50%); /* 대상을 y축(수직) 이동. -50% : 자신의 높이의 절반만큼 위로 이동 */
+  cursor: pointer; 
+  width: 24px;
+  height: 24px; 
+}
+
+.emoji-list {
+  background-color: #333;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 1rem; 
+  width: 400px; 
+  height: 200px;  
+  border: 1px solid #ccc;
+  position: absolute; 
+  bottom: 100%; 
+  left: 50%; 
+  transform: translateX(-50%); /* 대상을 x축(수평) 이동. -50% : 자신의 너비의 절반만큼 왼쪽로 이동 */
+  z-index: 1000; 
+}
+
+.emoji-picker {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-height: 100%; 
+  overflow-y: auto; /* 스크롤바 생성 */
+  padding-right: 10px;
+}
+
+.emoji {
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.chat-log-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.chat-log-pagination button {
+  width: 35px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  margin: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.chat-log-pagination button.active {
+  background-color: #81c784; 
+}
+
+.chat-log-pagination button:hover {
+  background-color: #45a049; 
+}

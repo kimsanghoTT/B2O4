@@ -1,0 +1,64 @@
+/* PaymentHistoryCss.css */
+
+.payment-history-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 235px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-history-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 1px solid #888;
+  padding-bottom: 10px;
+}
+
+.payment-history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.payment-history-table thead {
+  background-color: #f1f1f1;
+}
+
+.payment-history-table th, .payment-history-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.payment-history-table th {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.payment-history-table td {
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.payment-history-table img {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.payment-history-empty {
+  font-size: 18px;
+  color: #888;
+  text-align: center;
+  padding: 20px 0;
+}

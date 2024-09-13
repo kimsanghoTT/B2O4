@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="b2o4.mapper.MainPageMapper">
+
+	<!-- 평가 받은 스타디움 가져오기 -->
+	<select id="getStadiumList" resultType="b2o4.dto.MainPage">
+		SELECT og.stadiumNo, og.stadiumName, og.stadiumAddress, og.stadiumPrice, og.stadiumCapacity, og.stadiumImage, (SUM(rv.likeCount) - SUM(rv.dislikeCount)) as totalLike
+		FROM stadium og
+		JOIN stadiumreview rv ON og.stadiumNo = rv.stadiumNo
+		GROUP BY og.stadiumNo, og.stadiumName, og.stadiumImage
+		ORDER BY totalLike DESC LIMIT 8
+		
+	</select>
+	
+	<!-- 갤러리 게시판에서 게시물 6개 랜덤으로 가져오기 -->
+	<select id="getGalleryList" resultType="b2o4.dto.MainPage">
+		SELECT * FROM galleryboard ORDER BY RAND() LIMIT 6
+	</select>
+	
+	<!-- 용품 장터에서 용품들 랜덤으로 가져오기 -->
+	<select id="getGoodsList" resultType="b2o4.dto.MainPage">
+		SELECT * FROM goodsshop ORDER BY RAND() 
+	</select>
+</mapper>

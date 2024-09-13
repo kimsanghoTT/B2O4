@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        
+<mapper namespace="b2o4.mapper.DeliveryInfoMapper">
+    <insert id="insertDeliveryInfo" parameterType="b2o4.dto.DeliveryInfo">
+        INSERT INTO deliveryInfo (
+            memberNo, 
+            basketNo, 
+            deliveryAddress, 
+            recipientName, 
+            recipientPhone, 
+            deliveryRequest, 
+            createdDate
+        ) 
+        VALUES 
+        <foreach collection="basketNos" item="basketNo" separator=",">
+            (
+                #{memberNo},                    
+                #{basketNo},                     
+                #{deliveryAddress},     
+                #{recipientName},               
+                #{recipientPhone},                
+                #{deliveryRequest},                    
+                NOW()
+            )
+        </foreach>
+    </insert>
+</mapper>

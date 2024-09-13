@@ -1,0 +1,86 @@
+.purchase-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 190px;
+  font-family: Arial, sans-serif;
+}
+.purchase-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.purchase-info {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.purchase-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+.purchase-info li {
+  margin-bottom: 10px;
+}
+.purchase-info input, .purchase-info select {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 400px;
+}
+.purchase-info input:focus, .purchase-info select:focus {
+  border-color: rgb(26, 102, 208);
+  outline: none;
+}
+.payment-button {
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgb(26, 102, 208);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 20px auto; /* 중앙 정렬 */
+}
+.payment-button:hover {
+  background-color: #145DA0;
+}
+.table-container {
+  margin: 20px 0;
+}
+.basket-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+.basket-table th, .basket-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+.basket-table th {
+  background-color: #F4F4F4;
+}
+.basket-table img {
+  width: 100px; /* 이미지 크기 조정 */
+  height: auto; /* 비율 유지 */
+}
+.totalPrise {
+  text-align: right;
+  font-size: 20px;
+}
+.delete-button {
+  background-color: #FF6F61;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.delete-button:hover {
+  background-color: #E65B50;
+}
+.payment-final {
+  margin: 0 0 0 85%;
+}

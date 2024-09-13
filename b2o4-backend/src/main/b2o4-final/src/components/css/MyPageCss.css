@@ -1,0 +1,136 @@
+.mypage-container {
+  height: 100%;
+  width: 80%;
+  margin: 100px auto;
+  margin-top: 250px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.mypage-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.mypage-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.user-info,
+.user-profile {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.img-input .input-profile {
+  width: 10%;
+  cursor: pointer;
+}
+
+.user-info label,
+.user-profile label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.input-field,
+.file-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: outline-color ;
+}
+
+.file-input {
+  display: none;
+}
+
+
+
+.input-field:focus , .file-input:focus {
+  outline-color: yellowgreen;
+}
+
+.user-profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-preview {
+  display: block;
+  margin: 10px auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.user-page-buttons {
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.user-submit-button,
+.user-delete-button,
+.home-button {
+  width: auto;
+  max-width: 200px;
+  padding: 10px 20px;
+  margin: 0; 
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.user-submit-button {
+  background-color: #28a745;
+}
+
+.user-delete-button {
+  background-color: #dc3545;
+}
+
+.home-button {
+  background-color: #007bff;
+}
+
+.submit-button:hover,
+.delete-button:hover,
+.home-button:hover {
+  opacity: 0.9;
+}
+
+.user-info label,
+.user-profile label {
+  text-align: center;
+  font-weight: bold;
+}
+
+.error-message {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.error-message.valid {
+  color: green;
+}
+
+.error-message.invalid {
+  color: red;
+}

@@ -1,0 +1,65 @@
+.gallery-modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    z-index: 9999 !important;
+}
+
+.gallery-modal-content{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    width: 30% !important;
+    max-width: 100%;
+}
+
+.gallery-modal-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background : none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.password-container{
+    margin-top: 15px;
+}
+
+.password-container input{
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;   
+    transition: transform 0.5s ease;
+}
+
+.password-container button{
+    margin-top: 10px;
+    padding: 8px 16px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.login-page-button{
+    margin-top: 10px;
+}
+
+
+.password-change-container{
+    display: flex;
+    flex-direction: column;
+}
